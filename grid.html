@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-item{
+            display: grid;
+            /* grid-template-columns: 150px auto auto; */
+            grid-template-columns: auto auto auto auto auto auto;
+            /* grid-template-columns: 10% 30% 30% 30%; */
+            border: 3px solid red;
+        }
+        .col{
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid rgb(0, 255, 55);
+        }
+        .two{
+            /* grid-column: start columnno / endcolumnno+1 ; */
+            grid-column: 2/4;
+        }
+        .four{
+            /* grid-row: start rowno / endrowno+1 ; */
+            grid-row: 2/4;
+        }
+        /* .nine1{
+            grid-column: 3/5;
+
+        } */
+        .nine2{
+            grid-row: 3/5;
+            grid-column: 4/5;
+        }
+
+        /* grid area  */
+        .area-one{ grid-area:area-super1 ;}
+        .area-thee{ grid-area:area-super33 ;}
+        .area-four{ grid-area:area-super4 ;}
+        .area-five{ grid-area:area-super8 ;}
+        .area-seven{ grid-area:area-super7 ;}
+
+        .grid-area-item{
+            display: grid;
+            grid-template-areas: 
+            "area-super1 area-super1 area-super33 area-super33  "
+            "area-super4 area-super8 area-super33  area-super33"
+            "area-super7 area-super8 area-super3  area-super3"
+            ;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- ********** 01:30.00 ********** -->
+    
+    <div class="grid-item">
+        <div class="col one">hello one</div>
+        <div class="col two">hello two</div>
+        <!-- <div class="col thee">hello thee</div> -->
+        <div class="col four">hello four</div>
+        <div class="col five">hello five</div>
+        <div class="col siz">hello siz</div>
+        <!-- <div class="col seven">hello seven</div> -->
+        <div class="col eight">hello eight</div>
+        <div class="col nine">hello nine</div>
+        <div class="col nine">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, magni.</div>
+        <div class="col nine">hello 11</div>
+        <div class="col nine">hello 12</div>
+        <div class="col nine">hello 13</div>
+        <div class="col nine">hello 14</div>
+        <div class="col nine">hello 15</div>
+        <div class="col nine">hello 16</div>
+        <div class="col nine2">hello 17</div>
+        <div class="col nine">hello 18</div>
+        <div class="col nine">hello 13</div>
+        <div class="col nine">hello 14</div>
+        <div class="col nine1">hello 15</div>
+        <!-- <div class="col nine">hello 16</div> -->
+        <!-- <div class="col nine">hello 17</div> -->
+        <div class="col nine">hello 18</div>
+    </div>
+    <hr>
+    <br>
+    <!-- ********** 02:00:00 ********** -->
+    
+    <h3>grid area</h3>
+    <div class="grid-area-item">
+        <div class="col area-one">
+            
+        </div>
+        <!-- <div class="col area-two">hello two</div> -->
+        <div class="col area-thee">hello thee</div>
+        <div class="col area-four">hello four</div>
+        <div class="col area-five">hello five</div>
+        <!-- <div class="col area-siz">hello siz</div> -->
+        <div class="col area-seven">hello seven</div>
+        <!-- <div class="col area-eight">hello eight</div> -->
+        <div class="col area-nine">hello 9</div>
+        <div class="col area-nine">hello 10</div>
+
+    </div>
+</body>
+</html>
